@@ -1,0 +1,103 @@
+.magic {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 15px;
+}
+
+.magic-inner {
+    background-image: url(../../images/CTA\ Section\ \(1\).png);
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 40px 100px 40px;
+    max-width: 1120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #FFFFFF26;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.magic-inner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.magic-img {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.magic-title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 56px;
+    text-align: center;
+    margin: 0 auto;
+    width: 478px;
+}
+
+.magic-text {
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.magic-btn {
+    border-radius: 8px;
+    border: 1px solid #8C45FF66;
+    padding: 12px 20px;
+    box-shadow: 0px 0px 9px 4px #ffffff40 inset;
+    backdrop-filter: blur(10px);
+    background-color: #2d0076;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.magic-btn:hover {
+    padding: 14px 24px;
+    background-color: #5c1cc5;
+    color: #f0e3e3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.magic-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .magic-title {
+        font-size: 26px;
+        font-weight: 500;
+        margin-top: 10px;
+        width: 276px;
+        margin-bottom: 20px;
+    }
+
+    .magic-text {
+        width: 363px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+}

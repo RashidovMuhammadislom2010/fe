@@ -1,0 +1,93 @@
+.person {
+    padding: 64px 44px 32px 45px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.person-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #000000;
+    background-image: url(../../images/CTA\ Section.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1100px;
+    height: 473px;
+    border: 2px solid #FFFFFF26;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person-inner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); 
+}
+
+.person-inner:active {
+    transform: scale(0.97); 
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); 
+}
+
+
+.person-text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34px;
+    width: 339px;
+}
+
+.person-out {
+
+}
+
+.person-inner:hover .person-text {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.person-subtitle {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    transition: color 0.3s ease; 
+}
+
+.person-subtitle:hover {
+    color: #FFD700; 
+}
+
+.person-subtext {
+    color: #FFFFFFB2;
+    transition: color 0.3s ease;
+}
+
+.person-subtext:hover {
+    color: #FFA07A; 
+}
+
+.person-img {}
+
+@media only screen and (max-width:768px) {
+    .person-inner {
+        display: block;
+        padding: 20px;
+    } 
+
+    .person-img {
+        margin: 0 auto;
+    }
+
+    .person-text {
+        text-align: left;
+        margin: 0 auto;
+    }
+
+}
