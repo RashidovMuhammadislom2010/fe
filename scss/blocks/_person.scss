@@ -15,7 +15,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 1100px;
+    max-width: 1120px;
     height: 473px;
     border: 2px solid #FFFFFF26;
     border-radius: 10px;
@@ -73,21 +73,36 @@
     color: #FFA07A; 
 }
 
-.person-img {}
+.person-img {
+    text-align: center;
+}
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .person-inner {
         display: block;
         padding: 20px;
-    } 
+    }
 
     .person-img {
-        margin: 0 auto;
+        display: block; 
+        text-align: left;
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 10px;
     }
 
     .person-text {
-        text-align: left;
-        margin: 0 auto;
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .person {
+        padding: 10px;
     }
 
+    .person-text {
+        font-size:19 ;
+    }
 }

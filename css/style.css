@@ -137,7 +137,7 @@ body {
   }
 }
 .effort {
-  min-height: 100vh;
+  max-width: 100%;
   background-color: #000;
   background-image: url("../../images/Group 3.svg");
   background-size: cover;
@@ -460,7 +460,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 1100px;
+  max-width: 1120px;
   height: 473px;
   border: 2px solid rgba(255, 255, 255, 0.1490196078);
   border-radius: 10px;
@@ -513,17 +513,32 @@ body {
   color: #FFA07A;
 }
 
+.person-img {
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
   .person-inner {
     display: block;
     padding: 20px;
   }
   .person-img {
-    margin: 0 auto;
+    display: block;
+    text-align: left;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
   .person-text {
-    text-align: left;
-    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .person {
+    padding: 10px;
+  }
+  .person-text {
+    font-size: 19;
   }
 }
 .magic {
@@ -531,8 +546,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 0 15px;
+  padding: 50px;
 }
 
 .magic-inner {
@@ -626,5 +640,96 @@ body {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .magic-text {
+    font-size: 15px;
+    width: 300px;
+  }
+  .magic {
+    padding: 10px 10px;
+  }
+}
+.footer {
+  background-color: #000;
+  padding: 30px;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Kichik ekranda elementlar pastga tushishi uchun */
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__item-link {
+  color: rgba(255, 255, 255, 0.5019607843);
+  transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  text-decoration: none;
+}
+
+.footer__item-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.footer__item-link:active {
+  color: #FF0000;
+}
+
+.net__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.net__item a {
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, text-decoration 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  text-decoration: none;
+}
+
+.net__item a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.net__item a:active {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 480px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  .footer__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  .net__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

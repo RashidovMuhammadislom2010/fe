@@ -3,8 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 15px;
+    padding: 50px;
 }
 
 .magic-inner {
@@ -99,5 +98,16 @@
         font-size: 20px;
         font-weight: 400;
         margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .magic-text {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .magic {
+        padding: 10px 10px;
     }
 }
